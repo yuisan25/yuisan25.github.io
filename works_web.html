@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>作品一覧 - Web制作</title>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+<style>
+body {
+	font-family: 'Kiwi Maru', cursive;
+	max-width: 900px;
+	margin: 1em auto;
+	padding: 0 1em 2em;
+	background: #bfd3d6;
+	color: #95a3ac;
+}
+h1 {
+	color: #fff;
+	border-bottom: 3px solid #d8b1b2;
+	padding-bottom: 0.4em;
+	margin-bottom: 1em;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+.work-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #efe2dd;
+	margin-bottom: 12px;
+	padding: 15px 20px;
+	border-radius: 14px;
+	box-shadow: 3px 3px 8px rgba(149, 163, 172, 0.3);
+	font-weight: 600;
+	flex-wrap: wrap;
+}
+.work-title {
+	font-size: 1.1em;
+	color: #859199;
+}
+.work-buttons {
+	display: flex;
+	gap: 0.7em;
+	flex-wrap: wrap;
+	margin-top: 0.4em;
+}
+.button {
+	background: #d8b1b2;
+	color: white;
+	padding: 6px 16px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 0.9em;
+	box-shadow: 2px 2px 6px rgba(122, 63, 153, 0.4);
+	transition: background 0.3s ease;
+}
+.button:hover {
+	background: #d8b1b2;
+	box-shadow: 0 0 10px rgba(216, 177, 178, 0.6);
+}
+nav a {
+	display: inline-block;
+	margin-top: 2em;
+	padding: 8px 18px;
+	background: #d8b1b2;
+	color: white;
+	text-decoration: none;
+	border-radius: 24px;
+	font-weight: 700;
+	box-shadow: 0 4px 8px rgba(149,163,172,0.4);
+	transition: background 0.3s ease;
+}
+nav a:hover {
+	background: #95a3ac;
+	box-shadow: 0 6px 12px rgba(149,163,172,0.6);
+}
+
+@media (max-width: 600px) {
+.work-item {
+	flex-direction: column;
+	align-items: flex-start;
+}
+}
+</style>
+</head>
+<body>
+<h1>Web制作の作品一覧</h1>
+<ul>
+  <li class="work-item"> <span class="work-title">文鳥について</span>
+    <div class="work-buttons"> <a href="pdfs/bird.pdf" target="_blank" class="button">説明PDF</a> </div>
+  </li>
+  <li class="work-item"> <span class="work-title">じゃんけんで勝負！</span>
+    <div class="work-buttons"> <a href="pdfs/janken.pdf" target="_blank" class="button">説明PDF</a> </div>
+  </li>
+  <li class="work-item"> <span class="work-title">ストップウォッチ＋記録</span>
+    <div class="work-buttons"> <a href="pdfs/stopwatch.pdf" target="_blank" class="button">説明PDF</a> </div>
+  </li>
+  <li class="work-item"> <span class="work-title">今日のラッキーカラー占い</span>
+    <div class="work-buttons"> <a href="pdfs/luckycolor.pdf" target="_blank" class="button">説明PDF</a> </div>
+  </li>
+  <li class="work-item"> <span class="work-title">ケーキ一覧サイト</span>
+    <div class="work-buttons"> <a href="pdfs/cake.pdf" target="_blank" class="button">説明PDF</a> </div>
+  </li>
+</ul>
+<nav><a href="index.html">← ポートフォリオトップに戻る</a></nav>
+</body>
+</html>
