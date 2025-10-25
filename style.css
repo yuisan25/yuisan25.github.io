@@ -1,0 +1,247 @@
+@charset "utf-8";
+body {
+  margin: 0;
+  font-family: 'Kiwi Maru', cursive;
+  background: #bfd3d6;
+  color: #95a3ac;
+  scroll-behavior: smooth;
+}
+header {
+  background-image: url("cover_bg.png");
+  background-size: cover; /* 全体にカバー */
+  background-position: center; /* 中央配置 */
+  background-repeat: no-repeat; /* 繰り返さない */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #95a3ac;
+  box-shadow: 0 4px 8px;
+  rgba(0, 0, 0, 0.05)
+}
+header h1 {
+  font-size: 5.5rem;
+  margin: 0 0 0.3em 0;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  header {
+    align-items: flex-start; /* 左寄せ */
+    text-align: left; /* テキストも左揃え */
+    padding-left: 1.5em; /* 左に少し余白を入れると見やすい */
+  }
+  header h1 {
+    font-size: 4rem; /* モバイル用に少し小さくするのもおすすめ */
+    letter-spacing: 0.05em; /* 文字の間隔も少し狭くして調整 */
+  }
+}
+section {
+  max-width: 900px;
+  margin: 4em auto;
+  padding: 2em 2em;
+  background: #f7f1ef;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+h2 {
+  color: #859199;
+  font-size: 2rem;
+  margin-bottom: 0.8em;
+  border-bottom: 3px solid #d8b1b2;
+  padding-bottom: 0.3em;
+}
+.image-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #6e797f;
+  border: 3px dashed #95a3ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #95a3ac;
+  font-weight: 600;
+  margin-bottom: 1em;
+  border-radius: 12px;
+  font-size: 1.1rem;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 1.2em;
+  font-size: 1.1rem;
+}
+footer {
+  background-color: #d8b1b2;
+  text-align: center;
+  padding: 2em 1em;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(255 255 255 / 0.85);
+  border-radius: 25px;
+  padding: 8px 20px;
+  box-shadow: 0 4px 8px rgba(110, 121, 127, 0.3);
+  font-weight: 600;
+  z-index: 999;
+}
+nav a {
+  color: #95a3ac;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #95a3ac;
+}
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+.skill-box {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid #bfd3d6;
+  border-radius: 16px;
+  padding: 1.2em 1.5em;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(110, 121, 127, 0.15);
+  transition: transform 0.3s ease;
+}
+.skill-box:hover {
+  transform: translateY(-4px);
+}
+.skill-box h3 {
+  font-size: 1.2rem;
+  color: #859199;
+  margin-bottom: 0.6em;
+  border-bottom: 2px solid #d8b1b2;
+  padding-bottom: 0.3em;
+}
+.skill-box ul {
+  list-style: disc;
+  padding-left: 1.2em;
+  color: #6e797f;
+  font-size: 1rem;
+  margin: 0;
+}
+#certifications {
+  max-width: 800px;
+  margin: 3em auto;
+  padding: 0 1em;
+  color: #96a3ac;
+}
+#certifications h2 {
+  color: #96a3ac;
+  border-bottom: 3px solid #96a3ac;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+.cert-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  justify-content: center;
+}
+.cert-group {
+  flex: 1 1 300px;
+}
+.cert-group h3 {
+  color: #6e797f;
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+}
+.cert-list {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.cert-item {
+  cursor: default;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(149, 163, 172, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cert-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 12px rgba(101, 173, 214, 0.5);
+}
+.acquired {
+  background: rgba(255, 255, 255, 0.5);
+  border: 3px solid #bfd3d6;
+  color: #6e797f;
+}
+.planned {
+  background: rgba(255, 255, 255, 0.5);
+  border: 3px dashed #bfd3d6;
+  color: #6e797f;
+}
+.work-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 12px; /* 丸くしたい場合 */
+}
+.work-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+a:hover .work-icon {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#certifications {
+  background: transparent;
+  box-shadow: none;
+}
+/* デフォルト（PC用） */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+/* ナビゲーション */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+/* スマホサイズ以下のときのスタイル */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    text-align: right;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 1rem;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+}
+/* CSS Document */
