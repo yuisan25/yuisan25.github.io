@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>作品一覧 - CG作品</title>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+body {
+	font-family: 'Kiwi Maru', cursive;
+	max-width: 900px;
+	margin: 1em auto;
+	padding: 0 1em 2em;
+	background: #bfd3d6;
+	color: #fff;
+}
+h1 {
+	color: #fff;
+	border-bottom: 3px solid #d8b1b2;
+	padding-bottom: 0.4em;
+	margin-bottom: 1em;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+.gallery video {
+	width: 240px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 12px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(160, 93, 187, 0.3);
+	transition: transform 0.3s ease;
+}
+.gallery video:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(160, 93, 187, 0.6);
+}
+/* モーダルスタイル */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.modal video {
+	max-width: 90%;
+	max-height: 70%;
+	border-radius: 12px;
+	box-shadow: 0 0 20px rgba(255,255,255,0.8);
+}
+.modal:target {
+	display: flex;
+}
+.close-btn {
+	position: fixed;
+	top: 20px;
+	right: 30px;
+	font-size: 2rem;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 1001;
+}
+.caption {
+	margin-top: 1em;
+	color: #f5f5f5;
+	font-size: 1rem;
+	text-align: center;
+	max-width: 80%;
+}
+nav a {
+	display: inline-block;
+	margin-top: 2em;
+	padding: 8px 18px;
+	background: #d8b1b2;
+	color: white;
+	text-decoration: none;
+	border-radius: 24px;
+	font-weight: 700;
+	box-shadow: 0 4px 8px rgba(149,163,172,0.4);
+	transition: background 0.3s ease;
+}
+nav a:hover {
+	background: #95a3ac;
+	box-shadow: 0 6px 12px rgba(149,163,172,0.6);
+}
+</style>
+</head>
+<body>
+<h1>CG作品一覧</h1>
+<div class="gallery"> <a href="#video1">
+  <video src="photos/Keyframing2.mov" muted loop></video>
+  </a> <a href="#video2">
+  <video src="photos/IK_MechArm01.mov" muted loop></video>
+  </a> <a href="#video3">
+  <video src="photos/usagi5_3.mov" muted loop></video>
+  </a> </div>
+
+<!-- モーダル（各動画） -->
+<div id="video1" class="modal"> <a href="#" class="close-btn">&times;</a>
+  <video src="photos/Keyframing2.mov" controls autoplay></video>
+  <p class="caption">作品1:ボールが白色のへこみに綺麗に入るように作成しました。</p>
+</div>
+<div id="video2" class="modal"> <a href="#" class="close-btn">&times;</a>
+  <video src="photos/IK_MechArm01.mov" controls autoplay></video>
+  <p class="caption">作品2:IK制御で動くメカアームのアニメーションを作成しました。</p>
+</div>
+<div id="video3" class="modal"> <a href="#" class="close-btn">&times;</a>
+  <video src="photos/usagi5_3.mov" controls autoplay></video>
+  <p class="caption">作品3:3Dでモデリングしたものをモーションキャプチャーのデータと組み合わせました。</p>
+</div>
+<nav><a href="index.html">← ポートフォリオトップに戻る</a></nav>
+</body>
+</html>
