@@ -1,0 +1,121 @@
+# yuisan25.github.io[index.html](https://github.com/user-attachments/files/23139576/index.html)
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yui's Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+<!-- ハンバーガーアイコン -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+<!-- クラス名を追加！ -->
+<nav class="nav-menu"> <a href="#about">About</a> <a href="#skills">Skill</a> <a href="#works">Works</a> </nav>
+<header>
+  <h1>Yui Furukawa</h1>
+  <h1>Portfolio</h1>
+</header>
+<section id="about">
+  <h2>About</h2>
+  <div style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap;">
+    <div style="flex: 0 0 200px; height: 200px;"> <img src="about_image.jpg" alt="プロフィール画像" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"> </div>
+    <div style="flex: 1;">
+      <p style="font-size: 0.9rem; color: #6e797f; margin: 0 0 0.2em 0; letter-spacing: 0.15em;"> Furukawa Yui </p>
+      <h1 style="font-size: 2.8rem; margin: 0; color: #859199; font-weight: 700;"> 古川　結 </h1>
+      <p style="font-size: 1.1rem; color: #6e797f; margin-top: 0.5em;"> 長崎県立大学情報システム学部情報システム学科 </p>
+      <p style="margin-top: 1.5em;  color: #6e797f"> 情報デザインを学びながら、デザイン・プログラミングに取り組んでいます。 </p>
+      <p style="margin-top: 1.5em;  color: #6e797f">mail：bs123033@sun.ac.jp</p>
+      <p style="margin-top: 1.5em;  color: #6e797f">&nbsp;</p>
+    </div>
+  </div>
+</section>
+<section id="skills">
+  <h2>Skill</h2>
+  <p style="color: #6e797f ; font-size: 0.95rem; margin-bottom: 1.5em;"> 以下は授業内で扱ったことのある技術・ツールです。 </p>
+  <div class="skill-grid">
+    <div class="skill-box">
+      <h3>プログラミング言語</h3>
+      <ul>
+        <li>C</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+    <div class="skill-box">
+      <h3>Web制作</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript（Canvas）</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+    <div class="skill-box">
+      <h3>グラフィック・デザイン</h3>
+      <ul>
+        <li>Illustrator</li>
+        <li>Photoshop</li>
+        <li>Dreamweaver</li>
+        <li>Maya</li>
+      </ul>
+    </div>
+    <div class="skill-box">
+      <h3>開発・その他</h3>
+      <ul>
+        <li>Linux</li>
+        <li>GNU Octave</li>
+        <li>DBMS</li>
+        <li>TCP/IP</li>
+        <li>SMTP / HTTP</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- skills セクションのあとに追加 -->
+  <section id="certifications">
+    <div class="cert-container">
+      <div class="cert-group">
+        <h3>取得済み資格</h3>
+        <div class="cert-list">
+          <div class="cert-item acquired" title="2023年3月取得">ITパスポート</div>
+          <div class="cert-item acquired" title="2023年3月取得">普通自動車免許</div>
+          <div class="cert-item acquired" title="2024年6月取得">Webデザイナー検定エキスパート</div>
+          <div class="cert-item acquired" title="2025年7月取得">色彩検定UC級</div>
+        </div>
+      </div>
+      <div class="cert-group">
+        <h3>受験予定</h3>
+        <div class="cert-list">
+          <div class="cert-item planned" title="2025年8月受験予定">基本情報技術者試験</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section id="works">
+  <h2>Works</h2>
+  <div style="display: flex; gap: 1.5em; flex-wrap: wrap; justify-content: center; margin-top: 1em;"> <a href="works_web.html" style="text-align: center; text-decoration: none;"> <img src="iconsweb.png" alt="Web制作アイコン" class="work-icon"> <span style="display: block; margin-top: 0.5em; color: #6e797f;">Web制作</span> </a> <a href="works_illustrator.html" style="text-align: center; text-decoration: none;"> <img src="iconsillustrator.png" alt="Illustratorアイコン" class="work-icon"> <span style="display: block; margin-top: 0.5em; color: #6e797f ;">Illustrator</span> </a> <a href="works_photoshop.html" style="text-align: center; text-decoration: none;"> <img src="iconsphotoshop.png" alt="Photoshopアイコン" class="work-icon"> <span style="display: block; margin-top: 0.5em; color: #6e797f;">Photoshop</span> </a> <a href="works_js_canvas.html" style="text-align: center; text-decoration: none;"> <img src="iconjs.png" alt="JavaScriptアイコン" class="work-icon"> <span style="display: block; margin-top: 0.5em; color: #6e797f;">JavaScript</span> </a> <a href="works_cg.html" style="text-align: center; text-decoration: none;"> <img src="iconscg.png" alt="CGアイコン" class="work-icon"> <span style="display: block; margin-top: 0.5em; color: #6e797f;">CG</span> </a> </div>
+</section>
+<footer> &copy; 2025 古川 結 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', function () {
+      menu.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+
+</body>
+</html>
